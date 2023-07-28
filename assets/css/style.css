@@ -187,6 +187,16 @@ main {
     font-size: 0.8rem;
     display: flex;
     align-items: center;
+    padding-right: 5px;
+}
+
+#news .cont-date-news {
+    justify-content: space-between;
+}
+
+#news .cont-date-news div {
+    display: flex;
+    align-items: center;
 }
 
 #news {
