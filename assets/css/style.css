@@ -244,6 +244,7 @@ main {
 
 #news .cont-categories {
     width: 35%;
+    height: 200px;
     margin-left: 5%;
     position: sticky;
     top: 60px;
