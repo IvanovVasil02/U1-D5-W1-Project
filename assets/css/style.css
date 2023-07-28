@@ -55,7 +55,6 @@ nav .cont-link ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     margin-right: 1rem;
 }
 
@@ -254,11 +253,24 @@ main {
 
 #news .cont-categories {
     width: 35%;
-    height: 200px;
+    height: 250px;
     margin-left: 5%;
     position: sticky;
     top: 60px;
+}
 
+#news .cont-link {
+    border-top: 1px solid #e7e7e7;
+    margin-top: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+#news .cont-categories a {
+    text-decoration: none;
+    color: #6B6B6B;
 }
 
 #news .cont-categories h2 {
@@ -279,7 +291,6 @@ main {
     border: 1px solid #E9EAEA;
     min-height: 35px;
     padding-inline: 10px;
-    flex-basis: content;
     border-radius: 4px;
     background-color: transparent;
     color: #6B6B6B;
@@ -315,14 +326,28 @@ main {
         padding-inline: 6%;
     }
 
+
     #news .cont-categories {
         width: 100%;
         margin-left: 0%;
         position: inherit;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #news .cont-link {
+        margin-bottom: 3rem;
     }
 
     #news .categories-button {
         font-size: 1rem;
+
+    }
+
+    #news .cont-link {
+        display: flex;
     }
 
     .cont-news {
@@ -342,9 +367,10 @@ main {
     #news .cont-data-news p {
         font-size: 1rem;
     }
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 499px) {
 
 
     header nav {
@@ -415,6 +441,14 @@ main {
 
     #news .categories-button {
         min-height: 25px;
+        font-size: 0.6rem;
+    }
+
+    #news .cont-link {
+        flex-wrap: wrap;
+    }
+
+    #news .cont-link a {
         font-size: 0.6rem;
     }
 
